@@ -1,0 +1,2 @@
+- Simplify code relative to the first ring neighs (possible avoid using it and work on triangles directly)
+- Compare results with solving on a regulare grid
