@@ -378,12 +378,12 @@ void compute_harmonic_map()
     std::vector<double> weight_map( mesh.nb_vertices() );
 
     {
-        //solve_bilaplacian(vertices, edges, boundaries, weight_map);
+        solve_bilaplacian(vertices, edges, boundaries, weight_map);
 
         //solve_bilaplacian_diffusion(vertices, edges, boundaries, weight_map);
 
         // To compute harmonic weights:
-        solve_laplace_equation(vertices, edges, mesh._triangles,boundaries, weight_map);
+        //solve_laplace_equation(vertices, edges, mesh._triangles,boundaries, weight_map);
     }
 
     if(_g_3d_view){
